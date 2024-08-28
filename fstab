@@ -1,0 +1,7 @@
+PARTUUID=WhatUUID /boot/efi vfat umask=0077 0 1
+
+/dev/mapper/LUKS_ROOT /			btrfs	defaults,noatime,ssd,compress=lzo,subvol=@ 0 0
+/dev/mapper/LUKS_BOOT /boot		ext4	defaults,noatime 0 1
+/dev/mapper/LUKS_ROOT /home		btrfs	defaults,noatime,ssd,compress=lzo,subvol=@home 0 2
+/dev/mapper/LUKS_ROOT /root		btrfs	defaults,noatime,ssd,compress=lzo,subvol=@root 0 3
+/dev/mapper/LUKS_SWAP none		swap 	sw 0 0

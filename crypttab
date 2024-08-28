@@ -1,0 +1,4 @@
+# <target name>	<source device>		<key file>	<options>
+LUKS_BOOT UUID=BOOTUUID /etc/luks/boot_os.keyfile luks,discard
+LUKS_SWAP UUID=SWAPUUID /etc/luks/boot_os.keyfile luks,discard
+LUKS_ROOT UUID=ROOTUUID /etc/luks/boot_os.keyfile luks,discard
