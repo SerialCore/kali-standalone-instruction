@@ -71,7 +71,7 @@ cp fstab crypttab /target/etc
 # 5. actual installation
 # hold [Ctrl]+[Alt]+[F5]
 # ...
-# Continue without boot loader
+# before Continue without boot loader
 
 # 6. set up initial ram disk
 # hold [Ctrl]+[Alt]+[F3]
